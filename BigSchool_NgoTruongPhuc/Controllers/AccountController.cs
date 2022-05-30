@@ -11,7 +11,8 @@ using Microsoft.Owin.Security;
 using BigSchool_NgoTruongPhuc.Models;
 
 namespace BigSchool_NgoTruongPhuc.Controllers
-{
+{   
+    // Hello 
     [Authorize]
     public class AccountController : Controller
     {
