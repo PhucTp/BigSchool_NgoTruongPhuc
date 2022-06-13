@@ -12,7 +12,7 @@ using BigSchool_NgoTruongPhuc.Models;
 
 namespace BigSchool_NgoTruongPhuc.Controllers
 {   
-    // Hello 
+    // Helloo
     [Authorize]
     public class AccountController : Controller
     {
