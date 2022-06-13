@@ -15,7 +15,7 @@ namespace BigSchool_NgoTruongPhuc.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
+        //
         public ManageController()
         {
         }

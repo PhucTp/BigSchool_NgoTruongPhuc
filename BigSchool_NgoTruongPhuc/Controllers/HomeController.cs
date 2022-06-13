@@ -12,6 +12,7 @@ namespace BigSchool_NgoTruongPhuc.Controllers
         {
             return View();
         }
+        
 
         public ActionResult About()
         {
