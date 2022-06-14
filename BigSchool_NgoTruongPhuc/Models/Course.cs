@@ -18,6 +18,6 @@ namespace BigSchool_NgoTruongPhuc.Models
         public DateTime DateTime { get; set; } 
         public Category Category { get; set; }
         [Required] 
-        public byte CategoryId { get; set; }
+        public byte CategoryId { get; set; }//
     }
 }
