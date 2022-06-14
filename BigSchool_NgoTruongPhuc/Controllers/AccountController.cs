@@ -140,6 +140,7 @@ namespace BigSchool_NgoTruongPhuc.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            //
             return View();
         }
 
