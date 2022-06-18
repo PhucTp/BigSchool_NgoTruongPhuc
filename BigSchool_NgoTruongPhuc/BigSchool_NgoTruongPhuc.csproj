@@ -175,20 +175,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206181314021_KhoiTaoModel.cs" />
-    <Compile Include="Migrations\202206181314021_KhoiTaoModel.designer.cs">
-      <DependentUpon>202206181314021_KhoiTaoModel.cs</DependentUpon>
+    <Compile Include="Migrations\202206181549131_InitialModel.cs" />
+    <Compile Include="Migrations\202206181549131_InitialModel.designer.cs">
+      <DependentUpon>202206181549131_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206181315546_PopulateCategoryTable.cs" />
-    <Compile Include="Migrations\202206181315546_PopulateCategoryTable.designer.cs">
-      <DependentUpon>202206181315546_PopulateCategoryTable.cs</DependentUpon>
+    <Compile Include="Migrations\202206181615140_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202206181615140_AddNameColumnToApplicationUser.designer.cs">
+      <DependentUpon>202206181615140_AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\AccountViewModels.cs .cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -202,10 +202,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -272,11 +272,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206181314021_KhoiTaoModel.resx">
-      <DependentUpon>202206181314021_KhoiTaoModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206181549131_InitialModel.resx">
+      <DependentUpon>202206181549131_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206181315546_PopulateCategoryTable.resx">
-      <DependentUpon>202206181315546_PopulateCategoryTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206181615140_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202206181615140_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
