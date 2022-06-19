@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNet.Identity;
-using BigSchool_NgoTruongPhuc.DTOs;
-using BigSchool_NgoTruongPhuc.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,8 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using BigSchool_NgoTruongPhuc.Models;
+using BigSchool_NgoTruongPhuc.DTOs;
+using Bigschool_NgoTruongPhuc.Models;
 
-namespace BigSchool_NgoTruongPhuc.Controllers
+namespace Bigschool_NgoTruongPhuc.Controllers
 {
     public class FollowingsController : ApiController
     {

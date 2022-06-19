@@ -1,56 +1,108 @@
 ﻿body {
-    background: #009432;
     padding-top: 50px;
     padding-bottom: 20px;
 }
+
+/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #009432;
 }
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+/*Override the default bootstrap Nar by Pham Quang Long*/
+.navbar-inverse {
+    background-color: #006400;
+    border-color: #556B2F;
 }
+
+    .navbar-inverse .navbar-brand {
+        color: #9370DB;
+    }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
     white-space: normal;
 }
-.container .jumbotron, .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
-    background: #F79F1F;
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
 }
-.btn-lg, .btn-group-lg > .btn {
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    background-color: #EA2027;
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
 }
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #009432;
-    background-color: #009432;
+
+.field-validation-valid {
+    display: none;
 }
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Override the default bootstrap Nar by Pham Quang Long*/
+
 .navbar-inverse {
-    background-color: #009432;
+    background-color: #006400;
+    border-color: #556B2F;
 }
 
-element.style {
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav {
+        color: #9370db;
+    }
+
+/*Course layout*/
+.course {
+    list-style: none;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    /* color: #9d9d9d; */
-    color: #1B1464;
-    font-size: 15px;
-    font-weight: bold;
-}
-.navbar-inverse .navbar-brand {
-    color: #9980FA;
-    text-transform: uppercase;
-    font-weight: 700;
-}
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .course > li > .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li > .details {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+            display: grid;
+        }
+
+
+        /* action */
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }

@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using Bigschool_NgoTruongPhuc.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace BigSchool_NgoTruongPhuc.Models
