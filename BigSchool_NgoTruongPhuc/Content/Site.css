@@ -1,6 +1,10 @@
-﻿body {
+﻿﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #ff7675;
+}
+body {
+    background-color: #ff7675;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -58,7 +62,7 @@ input[type="checkbox"].input-validation-error {
 /* Override the default bootstrap Nar by Pham Quang Long*/
 
 .navbar-inverse {
-    background-color: #006400;
+    background-color: #d63031;
     border-color: #556B2F;
 }
 
@@ -82,10 +86,11 @@ input[type="checkbox"].input-validation-error {
 
         .course > li > .date {
             text-align: center;
-            background-color: #d41d50;
+            background-color: red;
             color: white;
             width: 60px;
             border-radius: 8px;
+            padding: 20px;
         }
 
         .course > li > .details {
@@ -106,3 +111,20 @@ input[type="checkbox"].input-validation-error {
         .course > li:hover .action {
             display: block;
         }
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav {
+    /* color: #9370db; */
+    color: black;
+    /* font-size: 20px; */
+    font-weight: bold;
+    text-transform:uppercase;
+}
+    .navbar-inverse .navbar-nav > li > a {
+        /* color: white; */
+        color: #fbc531;
+    }
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    background-color: #44bd32;
+    border-color: #ccc;
+}
