@@ -3,15 +3,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using BigSchool_NgoTruongPhuc;
-using BigSchool_NgoTruongPhuc.Controllers;
-using BigSchool_NgoTruongPhuc.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using BigSchool_NgoTruongPhuc.Models;
 
-
-namespace NgoTruongPhuc_bigschool.Controllers
+namespace BigSchool_NgoTruongPhuc.Controllers
 {
     [Authorize]
     public class ManageController : Controller
