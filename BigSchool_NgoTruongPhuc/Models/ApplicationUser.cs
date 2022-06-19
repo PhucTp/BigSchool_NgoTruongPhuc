@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -14,6 +14,15 @@ namespace BigSchool_NgoTruongPhuc.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+
+        public ICollection<Following> Followers { get; set; }
+        public ICollection<Following> Followees { get; set; }
+
+        public ApplicationUser()
+        {
+            Followers = new Collection<Following>();
+            Followees = new Collection<Following>();
+        }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -21,26 +30,5 @@ namespace BigSchool_NgoTruongPhuc.Models
             // Add custom user claims here
             return userIdentity;
         }
-
-        internal class ChallengeResult : ActionResult
-        {
-            private string provider;
-            private string v1;
-            private string v2;
-
-            public ChallengeResult(string provider, string v1, string v2)
-            {
-                this.provider = provider;
-                this.v1 = v1;
-                this.v2 = v2;
-            }
-
-            public override void ExecuteResult(ControllerContext context)
-            {
-                throw new System.NotImplementedException();
-            }
-        }
     }
-
-    
 }

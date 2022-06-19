@@ -1,18 +1,43 @@
-﻿using System;
+﻿using BigSchool_NgoTruongPhuc.Models;
+using BigSchool_NgoTruongPhuc.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
+using System.Data.Entity;
 
 namespace BigSchool_NgoTruongPhuc.Controllers
 {
+
     public class HomeController : Controller
     {
+        private ApplicationDbContext _dbContext;
+        public HomeController()
+        {
+            _dbContext = new ApplicationDbContext();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var userId = User.Identity.GetUserId();
+            var upcommingCourses = _dbContext.Courses.Include(c => c.Lecturer)
+                                                     .Include(c => c.Category)
+                                                     .Where(a => a.IsCanceled == false)
+                                                     .Where(c => c.DateTime > DateTime.Now);
+
+            var viewModel = new CoursesViewModel
+            {
+                UpcommingCourses = upcommingCourses,
+                ShowAction = User.Identity.IsAuthenticated,
+                Followings = _dbContext.Followings.Where(f => userId != null && f.FolloweeId == userId).ToList(),
+                Attendances = _dbContext.Attendances.Include(a => a.Course).ToList()
+
+            };
+            return View(viewModel);
         }
-        
+
 
         public ActionResult About()
         {

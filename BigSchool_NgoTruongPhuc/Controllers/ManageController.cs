@@ -3,19 +3,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using BigSchool_NgoTruongPhuc;
+using BigSchool_NgoTruongPhuc.Controllers;
+using BigSchool_NgoTruongPhuc.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using BigSchool_NgoTruongPhuc.Models;
 
-namespace BigSchool_NgoTruongPhuc.Controllers
+
+namespace NgoTruongPhuc_bigschool.Controllers
 {
     [Authorize]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        //
+
         public ManageController()
         {
         }
@@ -32,9 +35,9 @@ namespace BigSchool_NgoTruongPhuc.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -306,7 +309,7 @@ namespace BigSchool_NgoTruongPhuc.Controllers
         public ActionResult LinkLogin(string provider)
         {
             // Request a redirect to the external login provider to link a login for the current user
-            return new ApplicationUser.ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
+            return new AccountController.ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
         }
 
         //
@@ -333,7 +336,7 @@ namespace BigSchool_NgoTruongPhuc.Controllers
             base.Dispose(disposing);
         }
 
-#region Helpers
+        #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
 
@@ -384,6 +387,6 @@ namespace BigSchool_NgoTruongPhuc.Controllers
             Error
         }
 
-#endregion
+        #endregion
     }
 }

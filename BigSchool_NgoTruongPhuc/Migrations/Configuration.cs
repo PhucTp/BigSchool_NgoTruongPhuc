@@ -10,6 +10,7 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "BigSchool_NgoTruongPhuc.Models.ApplicationDbContext";
         }
 
         protected override void Seed(BigSchool_NgoTruongPhuc.Models.ApplicationDbContext context)

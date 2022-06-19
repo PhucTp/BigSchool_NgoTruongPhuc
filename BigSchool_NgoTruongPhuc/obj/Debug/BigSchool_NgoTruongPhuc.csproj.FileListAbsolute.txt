@@ -217,6 +217,14 @@ C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\
 C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.csproj.CopyComplete
 C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.dll
 C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.pdb
-C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.InitialModel.resources
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Net.Http.Formatting.dll
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Web.Http.dll
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Web.Http.WebHost.dll
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Net.Http.Formatting.xml
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Web.Http.xml
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\bin\System.Web.Http.WebHost.xml
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.InitialCreate.resources
 C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.csproj.GenerateResource.cache
-C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.AddNameColumnToApplicationUser.resources
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.KhoiTaoModel.resources
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.PopulateCategoryTable.resources
+C:\Users\truon\Source\Repos\BigSchool_NgoTruongPhuc\BigSchool_NgoTruongPhuc\obj\Debug\BigSchool_NgoTruongPhuc.Migrations.AddAttendance.resources
