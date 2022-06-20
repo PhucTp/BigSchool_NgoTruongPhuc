@@ -128,3 +128,17 @@ input[type="checkbox"].input-validation-error {
     background-color: #44bd32;
     border-color: #ccc;
 }
+    .btn-default:hover {
+        color: #333;
+        background-color: #fbc531;
+        border-color: #adadad;
+    }
+.course > li > .date {
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+    padding: 20px;
+    
+}
